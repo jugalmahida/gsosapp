@@ -75,7 +75,7 @@ class _DashboardscreenState extends State<Dashboardscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: getBoldText(text: "G-SOS"),
+        title: getBoldText(text: "GSOS"),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(

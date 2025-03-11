@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gsos/views/widgets/sizedbox.dart';
-import 'package:gsos/views/widgets/text.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -22,13 +20,11 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset("assets/images/applogo.jpeg"),
-          get10height(),
-          getBoldText(text: "Welcome to G-SOS")
-        ],
+      body: Center(
+        child: Image.asset(
+          "assets/images/applogo.jpeg",
+          scale: 3,
+        ),
       ),
     );
   }

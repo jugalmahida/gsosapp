@@ -21,7 +21,7 @@ class _Onloading4State extends State<Onloading4> {
             Image.asset("assets/images/logo_2.png"),
             get10height(),
             Text(
-              "Welcome to G-SOS",
+              "Welcome to GSOS",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             get10height(),
