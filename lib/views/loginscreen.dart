@@ -118,32 +118,32 @@ class _LoginscreenState extends State<Loginscreen> {
                     final username = _username.text.trim();
                     final password = _password.text.trim();
                     print("Username - $username | Password - $password");
-
+                    Navigator.pushReplacementNamed(context, '/dashboardscreen');
                     // Loading Dialog
-                    showDialog(
-                      context: context,
-                      barrierColor: Colors.transparent,
-                      builder: (BuildContext context) => AlertDialog(
-                        backgroundColor: Colors.transparent,
-                        elevation: 0,
-                        contentPadding: EdgeInsets.zero,
-                        content: Container(
-                          margin: EdgeInsets.zero,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Image.asset("assets/images/loading.gif"),
-                          ),
-                        ),
-                      ),
-                    );
+                    // showDialog(
+                    //   context: context,
+                    //   barrierColor: Colors.transparent,
+                    //   builder: (BuildContext context) => AlertDialog(
+                    //     backgroundColor: Colors.transparent,
+                    //     elevation: 0,
+                    //     contentPadding: EdgeInsets.zero,
+                    //     content: Container(
+                    //       margin: EdgeInsets.zero,
+                    //       child: ClipRRect(
+                    //         borderRadius: BorderRadius.circular(10.0),
+                    //         child: Image.asset("assets/images/loading.gif"),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // );
 
-                    Future.delayed(const Duration(seconds: 3), () {
-                      if (mounted) {
-                        Navigator.of(context).pop(); // Dismiss the dialog
-                        Navigator.pushReplacementNamed(
-                            context, '/dashboardscreen');
-                      }
-                    });
+                    // Future.delayed(const Duration(seconds: 3), () {
+                    //   if (mounted) {
+                    //     Navigator.of(context).pop(); // Dismiss the dialog
+                    //     Navigator.pushReplacementNamed(
+                    //         context, '/dashboardscreen');
+                    //   }
+                    // });
 
                     // }
                   },

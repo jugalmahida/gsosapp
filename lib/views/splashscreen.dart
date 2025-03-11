@@ -23,7 +23,7 @@ class _SplashscreenState extends State<Splashscreen> {
       body: Center(
         child: Image.asset(
           "assets/images/applogo.jpeg",
-          scale: 3,
+          scale: 2.5,
         ),
       ),
     );
